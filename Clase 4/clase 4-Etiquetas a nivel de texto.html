@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Etiquetas a nivel de texto</title>
+  </head>
+  <body>
+    <header>
+      <!--Todo el contenido de nuestra cabecera, banner, menú de navegación, etc.-->
+    </header>
+
+    <!--main. Contenido principal de la página-->
+    <main>
+        <a href="https://www.google.com">Enlace a google</a>
+
+        <!--Etiqueta de énfasis a una o varias palabras dentro de un texto-->
+        <p>Visualización de las <em>etiquetas a nivel</em> de texto en HTML</p>
+
+        <!--
+          Texto normal -> 0
+          Texto con <em> -> 1
+          Texto con <strong> -> 2
+        -->
+
+         <!--Máxima importancia a una o varias palabras dentro de un texto  -->
+        <p>Visualización de las etiquetas a nivel de texto en <strong>HTML</strong></p>
+
+        <!--Contenido irrelevante en el contexto de la página y únicamente informativo-->
+        <p><small>Acepto los términos de licencia</small></p>
+
+        <!--cite ->Representa una referencia a un libro, película, texto, etc.-->
+        <!--q ->Representa el contenido que se quiere citar.-->
+        <p>
+          Como Edward Norton dijo en
+          <cite>American History X</cite>
+          <q>El odio es un lastre, la vida es demasiado corta para estar siempre cabreado</q>
+        </p>
+      <!--Representa código máquina, por ejemplo HTML, CSS, JS, etc. Código que no queremos que se interprete, solo que se muestre por pantalla-->
+      <code>
+          const funcion1 = () =>{
+            codigo a ejecutar;
+        }
+      </code>
+
+      <!--Subíndices  -->
+      <p>La fórmula del agua es H<sub>2</sub>O</p>
+
+      <!--Superíndices  -->
+      <p>Una potencia se compone de base (x) y exponente (z) X<sup>z</sup></p>
+
+      <!--Esta etiqueta no representa nada, se utiliza sobre todo con el atributo class para css-->
+      <span class="menu-hamburguesa">Icono del menú de hamburguesa (se visualizara con CSS)</span>
+
+      <!--Salto de línea forzado  -->
+      <p>Lorem ipsum dolor<br> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      <!--Salto de línea opcional-->
+      <p>FraseLargaSinEspacios<wbr>ParaVerSaltosDeLíneaOpcionales</p>
+    </main>
+  </body>
+</html>

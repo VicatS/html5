@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularios II - Inputs</title>
+</head>
+
+
+<!--
+    radio - crea un radio button
+    checkbox - crea un checkbox
+
+    date - permite seleccionar una fecha de un calendario
+    datetime-local - permite seleccionar fecha y hora (obsoleto por la WHATWG)
+    time -  Pemite introducir una hora sin zona horaria específica
+    month - permite seleccionar un mes de un caledario
+    week - permite seleccionar una semana
+
+    color - permite seleccionar un color de una paleta de colores
+
+    email - sirve para introducir un email con validación HTML5 (insegura) - Validar desde JS y el servidor
+
+    file - permite subir archivos al servidor
+
+    range - crea un slide para seleccionar un valor numérico
+
+    search - crea un campo igual que text pero con semántica de búsqueda
+
+    tel -  crea un campo para introducir teléfono, en movil sale un teclado diferente
+    url- crea un campo para introduccir una url
+    
+    <datalist></datalist> - crea un filtro en el que poder buscar los valores de option
+
+    <input list=id_de_la_lista>
+-->
+<body>
+
+    <form action="#">
+        <!-- <legend>Seleccione sexo</legend>
+        <label for="man">Hombre</label>
+        <input type="radio" id="man" name="sex">
+        <label for="woman">Mujer</label>
+        <input type="radio" id="woman" name="sex">
+        <legend>Seleccione hobbies</legend>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css">
+        <label for="js">JS</label>
+        <input type="checkbox" id="js">
+
+        <input type="date">
+        <input type="time">
+        <input type="month">
+        <input type="week">
+
+        <input type="color">
+        <input type="email">
+
+        <input type="submit">
+
+        <input type="file">
+
+        <input type="range" min="0" max="50" step="10">
+
+        <input type="search">
+        <input type="tel"> -->
+
+        <label for="browsers">Elija un navegador</label>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="IE">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+</body>
+
+</html>

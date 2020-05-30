@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularios I - Inputs</title>
+</head>
+
+<style>
+    input, label{
+        display: block;
+    }
+</style>
+
+<!--
+    form - encierra todos los campos del formulario
+    label - representa el nombre del campo
+    input type=
+    text (default) - Entrada de texto
+    password - campo para contraseñas (no encripta, sólo oculta)
+    number - permite introducir únicamente valores numéricos
+    submit - botón para enviar el formulario
+    button - igual que submit
+    image - enviar el formulario usando una imagen personalizada
+    button - este tipo fue sustituido en HTML5 por la etiqueta button que teneís a continuación
+    <button></button> - igual que submit
+    reset - reinicia el formulario vaciando los campos
+-->
+<body>
+
+    <form action="#">
+        <label>Nombre
+            <input type="text">
+        </label>
+
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="age">Edad</label>
+        <input type="number">
+
+        <label for="pass">Password</label>
+        <input type="password">
+
+        <input type="submit" value="Enviar Formulario">
+        <input type="image" src="">
+        <button>Enviar Formulario</button>
+
+        <input type="reset" value="Resetear Formulario">
+    </form>
+
+</body>
+
+</html>

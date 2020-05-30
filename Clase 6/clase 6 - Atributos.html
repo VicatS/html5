@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+<head>
+    <meta charset="utf-8">
+    <title>Atributos</title>
+
+    <style>
+    
+    li[data-user="user"]{
+        color: red;
+    }
+
+    li[data-user="admin"]{
+        color: green;
+    }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <!--Todo el contenido de nuestra cabecera, banner, menú de navegación, etc.-->
+    </header>
+    
+    <!--main. Contenido principal de la página-->
+    <nav role="navegacion-principal">
+        <ul>
+            <li data-user="user">Item1</li>
+            <li data-user="admin">Item2</li>
+            <li data-user="user">Item3</li>
+            <li data-user="user">Item4</li>
+        </ul>
+    </nav>
+    <main role="contenido-principal">
+        <p class="parrafo" id="primer-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officia magnam vero repellat, iure quis molestias nulla quas voluptate nostrum necessitatibus, quasi ex asperiores laudantium accusamus soluta recusandae expedita quia.</p>
+    </main>
+</body>
+</html>

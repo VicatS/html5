@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularios IV - Attributes</title>
+</head>
+
+
+<!--
+    <fieldset>
+        <legend></legend>
+    </fieldset>
+
+    Attributes
+        boolean
+            required: Hace que un campo sea obligatiorio
+            disabled: desactiva la interacción con un campo
+            checked: Marca un radio | checkbox por defecto
+            selected: Marca un option por defecto
+            autofocus: Pone el foco automático en un campo
+            readonly: Hace que el campo sea solo de lectura
+        Otros
+            maxlenght/minlenght: determina la cantidad máxima o mínima de caracteres en un campo
+            min/max: determina el mínimo y el máximo en los campos numéricos
+            autocomplete=on|off(formulario): Permite al navegador autocompletar con los datos que tiene almacenados
+            placeholder: Establece un valor de inicio y se borra al introducir información
+-->
+
+
+<body>
+
+    <form action="#" autocomplete="on">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="name" >Nombre</label>
+            <input type="text" id="name" required minlength="5" placeholder="Introduzca su nombre">
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname" readonly>
+            <label for="age">Edad</label>
+            <input type="number" id="age" min="15" max="100">
+        </fieldset>
+        <input type="radio" name="sex" checked>Hombre
+        <input type="radio" name="sex">Mujer
+
+        <select name="" id="">
+            <option value="">HTML</option>
+            <option value="" selected>CSS</option>
+            <option value="">JS</option>
+        </select>
+        <button>Enviar</button>
+    </form>
+
+</body>
+
+</html>
